@@ -219,7 +219,7 @@
                         }
                         case DVTSourceCodeLanguageKindObjectiveC:
                         case DVTSourceCodeLanguageKindOther: {
-                            [replacementString appendString:[NSString stringWithFormat:@"case %@: {\n<#statement#>\nbreak;\n}\n", child.displayName]];
+                            [replacementString appendString:[NSString stringWithFormat:@"case %@: {\n<#statement#>\n} break;\n", child.displayName]];
                             break;
                         }
                     }
